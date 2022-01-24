@@ -1,0 +1,154 @@
+/* GENERAL */
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	background-color: white;
+    height: 60px;
+	z-index: 1;
+}
+
+nav {
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    padding: 5px;
+}
+
+/* SECTION HOME */
+
+#home {
+    background: url("../assets/img/bed.JPG") no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+#home div {
+    padding: 200px 0 0 20px;
+}
+
+/* SECTION SERVICES */
+
+#services {
+    background-color: white;
+}
+
+#services #services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#services #services-content div {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #60a3bc;
+    border-radius: 20px;
+}
+
+/* SECTION ABOUT */
+
+#about {
+    background-color: #ffe6c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about div {
+    width: 100%;
+}
+
+#about img {
+    width: 100%;
+}
+
+/* SECTION FEEDBACK */
+
+#feedback {
+    background-color: white;
+}
+
+.photos {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+.photos img {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid grey;
+}
+  
+#gallery {
+    padding-bottom: 20px;
+}
+
+/* SECTION COURSE */
+
+#course {
+    background-color: #ffe6c8;
+}
+
+/* SECTION STUFF */
+
+#stuff {
+    background-color: #adc0c7;
+}
+
+#stuff-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#stuff-content div {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* SECTION CONTACTS */
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #645a50;
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+footer p a {
+    color: white;
+}
+
+.footer-icon {
+    width: 30px;
+    fill: white;
+}

@@ -5,6 +5,117 @@ title: Ольга Мырсикова
 
 <main>
 
-    <h1>Ольга Мырсикова</h1>
+    <section id="home">
+        <div>
+            <h2>Ольга Мырсикова</h2>
+            <p>Консультант по детскому сну 🌙</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+
+        <div id="services-content">
+
+            <div>
+                <h3>0-4 месяца</h3>
+            </div>
+
+            <div>
+                <h3>4-18 месяцев</h3>
+            </div>
+
+            <div>
+                <h3>больше 18 месяцев</h3>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>Обо мне</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div>
+            <img src="assets/img/olga.JPG"/>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <h2>Отзывы</h2>
+
+        <div id="feedback-content">
+            <div class="photos">
+                <div><img src="assets/feedback/feedback-1.png"/></div>
+                <div><img src="assets/feedback/feedback-2.png"/></div>
+                <div><img src="assets/feedback/feedback-3.png"/></div>
+                <div><img src="assets/feedback/feedback-4.png"/></div>
+                <div><img src="assets/feedback/feedback-5.png"/></div>
+                <div><img src="assets/feedback/feedback-6.png"/></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.photos').slick({
+                    lazyLoad: 'ondemand',
+                    dots: true,
+                    mobileFirst: true,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            lazyLoad: 'ondemand',
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            dots: true,
+                            centerMode: true
+                        }
+                    }]
+                });
+            });
+        </script>
+    </section>
+
+    <section id="course">
+        <h2>Курс по сну SON-ON</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    </section>
+
+    <section id="stuff">
+        <h2>Полезные статьи</h2>
+        
+        <div id="stuff-content">
+
+            <div>
+                <h3>Статья 1</h3>
+                <p>Текст первой статьи</p>
+            </div>
+
+            <div>
+                <h3>Статья 2</h3>
+                <p>Текст второй статьи</p>
+            </div>
+
+            <div>
+                <h3>Статья 3</h3>
+                <p>Текст третьей статьи</p>
+            </div>
+
+            <div>
+                <h3>Статья 4</h3>
+                <p>Текст четвертой статьи</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </section>
 
 </main>

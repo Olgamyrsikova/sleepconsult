@@ -1,0 +1,83 @@
+/* GENERAL */
+
+main {
+	padding-top: 40px;
+}
+
+section {
+    padding: 50px;
+}
+
+/* HEADER */
+
+nav {
+    flex-wrap: nowrap;
+}
+
+/* SECTION HOME */
+
+#home {
+    background: url("../assets/img/bed-768px.JPG") no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+    text-align: left;
+}
+
+#home div {
+    padding: 200px 0 0 100px;
+}
+
+/* SECTION SERVICES */
+
+#services {
+    background-color: white;
+}
+
+#services #services-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+/* SECTION ABOUT */
+
+#about {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#about div {
+    padding: 50px;
+    width: 500px;
+}
+
+#about img {
+    width: 500px;
+}
+
+/* SECTION FEEDBACK */
+
+.photos {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+/* SECTION COURSE */
+
+/* SECTION STUFF */
+
+#stuff-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#stuff-content div {
+    margin: 0 20px 0 20px;
+}
+
+/* SECTION CONTACTS */
+
+/* FOOTER */
