@@ -2,23 +2,29 @@
 
   <script>
     function toggleMenu() {
-      var x = document.getElementById("menu");
-      if (x.style.display === "none") {
-        x.style.display = "flex";
+      var menu = document.getElementById("menu");
+      var menuButton = document.getElementById("menu-button");
+      if (menu.style.display === "none") {
+        menu.style.display = "flex";
+        menuButton.style.fill = "white";
       } else {
-        x.style.display = "none";
+        menu.style.display = "none";
+        menuButton.style.fill = "black";
       }
     }
 
     function closeMenu() {
       document.getElementById("menu").style.display = "none";
+      document.getElementById("menu-button").style.fill = "black";
     }
 
   </script>
 
   <nav>
 
-    <input id="menu-button" onClick="toggleMenu()" type="image" src="{{ site.url }}/assets/menu.svg" />
+    <svg id="menu-button" onClick="toggleMenu()" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+    </svg>
 
     <div id="menu-768">
       <p><a href="#services">Услуги</a></p>
