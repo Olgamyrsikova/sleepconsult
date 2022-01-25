@@ -10,15 +10,38 @@ section {
 
 /* HEADER */
 
-nav {
+#menu-button {
+    display: none;
+}
+
+#menu-768 {
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+	justify-content: center;
+    padding: 5px;
 }
 
-nav a {
+#menu {
+    display: none;
+}
+
+.menu-star {
+    color: #fad390;
+}
+
+#menu-768 p {
+    margin: 10px;
+}
+
+#menu-768 a {
+    text-decoration: none;
     transition: color 0.5s ease;
+    color: #3c6382;
 }
 
-nav a:hover {
+#menu-768 a:hover {
     color: #f6b93b;
 }
 

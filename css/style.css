@@ -28,26 +28,33 @@ header {
 	z-index: 1;
 }
 
-nav {
-    display: flex;
-	flex-direction: row;
-    flex-wrap: wrap;
-	justify-content: center;
-    align-items: center;
-    padding: 5px;
+#menu-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
 }
 
-nav p {
+#menu {
+    display: none;
+	flex-direction: column;
+	justify-content: flex-end;
+    padding: 70px 5px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+}
+
+#menu-768 {
+    display: none;
+}
+
+#menu p {
     margin: 10px;
 }
 
-nav a {
+#menu a {
     text-decoration: none;
-    color: #3c6382;
-}
-
-nav .nav-star {
-    color: #fad390;
+    color: white;
 }
 
 /* SECTION HOME */

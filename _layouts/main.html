@@ -18,6 +18,17 @@
 		<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
 		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
 
+		<!-- Smooth Scrolling -->
+		<script>
+		$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+			
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 500);
+		});
+		</script>
+
 
 	</head>
 	<body>
