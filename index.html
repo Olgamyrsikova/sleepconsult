@@ -3,6 +3,56 @@ layout: main
 title: Ольга Мырсикова
 ---
 
+<script>
+    function toggleUnder4Months() {
+      var menu = document.getElementById("under-4-months");
+      var moreButton = document.getElementById("under-4-months-more");
+      var hideButton = document.getElementById("under-4-months-hide");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+        moreButton.style.display = "none";
+        hideButton.style.display = "block";
+      } else {
+        menu.style.display = "none";
+        moreButton.style.display = "block";
+        hideButton.style.display = "hide";
+        jumpToService();
+      }
+    }
+
+    function toggleUnder18Months() {
+      var menu = document.getElementById("under-18-months");
+      var moreButton = document.getElementById("under-18-months-more");
+      var hideButton = document.getElementById("under-18-months-hide");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+        moreButton.style.display = "none";
+        hideButton.style.display = "block";
+      } else {
+        menu.style.display = "none";
+        moreButton.style.display = "block";
+        hideButton.style.display = "hide";
+        jumpToService();
+      }
+    }
+
+    function toggleOver18Months() {
+      var menu = document.getElementById("over-18-months");
+      var moreButton = document.getElementById("over-18-months-more");
+      var hideButton = document.getElementById("over-18-months-hide");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+        moreButton.style.display = "none";
+        hideButton.style.display = "block";
+      } else {
+        menu.style.display = "none";
+        moreButton.style.display = "block";
+        hideButton.style.display = "hide";
+      }
+    }
+
+</script>
+
 <main>
 
     <section id="home">
@@ -15,28 +65,205 @@ title: Ольга Мырсикова
     <section id="services">
         <h2>Услуги</h2>
 
+        <div class="gift-certificate">
+            <a href="https://docs.google.com/forms/d/16mzW6SfamV67geHuQELxgUd7UcKbNXNTGs4Mm29cv3o/viewform?edit_requested=true" target="_blank">
+                <h3>&#9758; подарочный сертификат &#9756;</h3>
+            </a>
+        </div>
+
         <div id="services-content">
 
-            <div>
-                <h3>0-4 месяца</h3>
+            <div class="service-group">
+                <h3>0—4 месяца</h3>
+
+                <div class="service">
+                    <h4>Звонок 30 минут 15€ / 1350₽</h4>
+                    <ul>
+                        <li>отвечу на все Ваши вопросы</li>
+                        <li>помогу сориентироваться и понять, что делать дальше</li>
+                        <li>дам четкие рекомендации по наладке сна</li>
+                    </ul>
+                </div>
+
+                <p class="service-button" id="under-4-months-more" onClick="toggleUnder4Months()">ЕЩЁ &darr;</p>
+
+                <div id="under-4-months" style="display: none;">
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Звонок 15 минут / бесплатно</h4>
+                        <ul>
+                            <li>услуга доступна только для пап/партнеров</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                            <li>обсудим проблемы со сном малыша и разберемся, как их решить</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Письмо консультанту / бесплатно</h4>
+                        <ul>
+                            <li>опишите Вашу ситуацию и задайте любые вопросы</li>
+                            <li>отвечу в течении 3х рабочих дней на электронную почту</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-button" id="under-4-months-hide" onClick="toggleUnder4Months()" style="display: none;">СВЕРНУТЬ &uarr;</p>
+
+                </div>
+
             </div>
 
-            <div>
-                <h3>4-18 месяцев</h3>
+            <div class="service-group">
+                <h3>4—18 месяцев</h3>
+
+                <div class="service">
+                    <h4>Звонок 30 минут 15€ / 1350₽</h4>
+                    <ul>
+                        <li>отвечу на все Ваши вопросы</li>
+                        <li>помогу сориентироваться и понять, что делать дальше</li>
+                        <li>дам четкие рекомендации по наладке сна</li>
+                    </ul>
+                </div>
+
+                <p class="service-button" id="under-18-months-more" onClick="toggleUnder18Months()">ЕЩЁ &darr;</p>
+
+                <div id="under-18-months" style="display: none;">
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Пакет «Что не так?» 25€ / 2250₽</h4>
+                        <ul>
+                            <li>если Вы запутались и не можете найти причину проблем</li>
+                            <li>если Вы еще не желаете учить самостоятельному сну, но соблюдаете все правила укладывания, а «оно не едет»</li>
+                            <li>если малыш спит сам, но что-то поломалось</li>
+                            <li>в пакет входит 3 суток работы в Дневнике сна с консультантом</li>
+                            <li>при желании можно продлить на любое количество суток по цене 6€ / 550₽ в сутки</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Курс Son-ON  65€ / 5500₽</h4>
+                        <ul>
+                            <li>учим спать самостоятельно</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Индивидуальный пакет «VIP» 125€ / 10700₽</h4>
+                        <ul>
+                            <li>детально проанализирую текущую ситуацию со сном Вашего малыша, расскажу обо всех аспектах организации сна, помогу с выбором методики и проконтролирую работу, чтобы все прошло без ошибок и максимально гладко.</li>
+                            <li>живая консультация 1,5ч план работы в методике видео-запись консультации звонок 30 мин</li>
+                            <li>план по режиму и гигиене сна</li>
+                            <li>поддержка работы в методике по Дневнику сна в течение 7 дней</li>
+                            <li>при желании Дневник может быть продлен на любое количество суток по цене 6€ / 550₽ в сутки</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Звонок 15 минут / бесплатно</h4>
+                        <ul>
+                            <li>услуга доступна только для пап/партнеров</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                            <li>обсудим проблемы со сном малыша и разберемся, как их решить</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Письмо консультанту / бесплатно</h4>
+                        <ul>
+                            <li>опишите Вашу ситуацию и задайте любые вопросы</li>
+                            <li>отвечу в течении 3х дней на электронную почту</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-button" id="under-18-months-hide" onClick="toggleUnder18Months()" style="display: none;">СВЕРНУТЬ &uarr;</p>
+
+                </div>
+
             </div>
 
-            <div>
-                <h3>больше 18 месяцев</h3>
-            </div>
+            <div class="service-group">
+                <h3>старше 18 месяцев</h3>
+                
+                <div class="service">
+                    <h4>Звонок 30 минут 15€ / 1350₽</h4>
+                    <ul>
+                        <li>отвечу на все Ваши вопросы</li>
+                        <li>помогу сориентироваться и понять, что делать дальше</li>
+                        <li>дам четкие рекомендации по наладке сна</li>
+                    </ul>
+                </div>
 
-            <div>
-                <h3>подарочный сертификат</h3>
-            </div>
+                <p class="service-button" id="over-18-months-more" onClick="toggleOver18Months()">ЕЩЁ &darr;</p>
 
-            <div>
-                <h3>подбор услуги</h3>
-            </div>
+                <div id="over-18-months" style="display: none;">
 
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Пакет «Что не так?» 25€ / 2250₽</h4>
+                        <ul>
+                            <li>если Вы запутались и не можете найти причину проблем</li>
+                            <li>если Вы еще не желаете учить самостоятельному сну, но соблюдаете все правила укладывания, а «оно не едет»</li>
+                            <li>если малыш спит сам, но что-то поломалось</li>
+                            <li>в пакет входит 3 суток работы в Дневнике сна с консультантом</li>
+                            <li>при желании можно продлить на любое количество суток по цене 6€ / 550₽ в сутки</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Индивидуальный пакет «VIP» 125€ / 10700₽</h4>
+                        <ul>
+                            <li>детально проанализирую текущую ситуацию со сном Вашего малыша, расскажу обо всех аспектах организации сна, помогу с выбором методики и проконтролирую работу, чтобы все прошло без ошибок и максимально гладко</li>
+                            <li>живая консультация 1,5ч план работы в методике видео-запись консультации звонок 30 мин</li>
+                            <li>план по режиму и гигиене сна</li>
+                            <li>поддержка работы в методике по Дневнику сна в течение 7 дней</li>
+                            <li>при желании Дневник может быть продлен на любое количество суток по цене 6€ / 550₽ в сутки</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Звонок 15 минут / бесплатно</h4>
+                        <ul>
+                            <li>услуга доступна только для пап/партнеров</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                            <li>обсудим проблемы со сном малыша и разберемся, как их решить</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-star">&starf;</p>
+
+                    <div class="service">
+                        <h4>Письмо консультанту / бесплатно</h4>
+                        <ul>
+                            <li>опишите Вашу ситуацию и задайте любые вопросы</li>
+                            <li>отвечу в течении 3х дней на электронную почту</li>
+                            <li>можно воспользоваться только 1 раз</li>
+                        </ul>
+                    </div>
+
+                    <p class="service-button" id="over-18-months-hide" onClick="toggleOver18Months()" style="display: none;">СВЕРНУТЬ &uarr;</p>
+
+                </div>
+            </div>
         </div>
         
     </section>
@@ -44,7 +271,25 @@ title: Ольга Мырсикова
     <section id="about">
         <div>
             <h2>Обо мне</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <div id="about-content">
+                <p>Я — Ольга и я знаю, где вы закопали радость материнства. Рождение моей дочери поделило мою личную жизнь на «до» и «после». «До», где я хозяйка всей себя и «после», когда мой маленький Властелин размазал меня по суткам тонким слоем и от меня прежней остались только туфли в шкафу. В моем мире из подгузников каждое раннее утро на меня падала бетонная плита размером с девятиэтажку и я с трудом могла вспомнить, что я ела на обед (и ела ли вообще).</p>
+
+                <p>Так прошли 4,5 месяца и я осознала, что перестала чувствовать что-либо, кроме огромного желания спать. Мое возвращение к себе и мой долгий путь в профессию начался именно тогда. И теперь я точно могу сказать, что обучение сну стало лучшей инвестицией в ребенка. Никакие советы по уходу за малышом не изменили мою жизнь и жизнь всей семьи так круто, как работа над сном.</p>
+            
+                <p>Теперь я дипломированный консультант по детскому сну и моё единственное искреннее стремление — помогать мамам восстановить свой ресурс, почувствовать себя легче и увереннее путем работы над сном их малышей. Я оказываю профессиональную поддержку семьям, которые желают:</p>
+                <ul>
+                    <li>отучить ребенка от укачиваний, соски, сна на груди</li>
+                    <li>перевести ребенка спать в свою кроватку или отдельную комнату</li>
+                    <li>научить малыша спать без мамы ночью и днем</li>
+                    <li>удлинить дневной сон</li>
+                    <li>иметь предсказуемый распорядок дня</li>
+                    <li>избавиться от долгих укладываний на сон и частых ночных пробуждений</li>
+                    <li>обучить ребенка самостоятельному засыпанию</li>
+                </ul>
+            
+                <p>Наша с вами работа позволит Вам высыпаться, подарит наслаждение материнством и силы обожать малыша так, как вы себе это представляли. Вы сможете наладить СВОЙ распорядок дня и иметь до 5 часов личного времени каждый день для любимых занятий, спорта, общения с мужем и старшими детьми.</p>
+            </div>
         </div>
         <div>
             <img src="assets/img/olga.JPG"/>
@@ -93,6 +338,31 @@ title: Ольга Мырсикова
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </section>
 
+    <section id="contacts">
+        <h2>Контакты</h2>
+        
+        <div id="contacts-content">
+
+            <div>
+                <h3>Забронировать консультацию?</h3>
+                <p>WhatsUp</p>
+                <p>Telegram</p>
+                <p>Viber</p>
+            </div>
+
+            <div>
+                <p class="service-star">&starf;</p>
+            </div>
+
+            <div>
+                <h3>Любой другой вопрос?</h3>
+                <p>Email</p>
+                <p>Instagram</p>
+            </div>
+
+        </div>
+    </section>
+
     <section id="stuff">
         <h2>Полезные статьи</h2>
         
@@ -119,11 +389,6 @@ title: Ольга Мырсикова
             </div>
 
         </div>
-    </section>
-
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </section>
 
 </main>

@@ -70,6 +70,47 @@ section {
     align-items: flex-start;
 }
 
+.service-group {
+    width: 30%;
+    text-align: left;
+}
+
+.service-group h3 {
+    text-align: center;
+}
+
+.service {
+    border: none;
+    margin: 0px;
+    padding: 0px 0px 0 5px;
+}
+
+.service h4 {
+    text-align: center;
+}
+
+.service-star {
+    text-align: center;
+    color: #fad390;
+}
+
+.service-button {
+    text-align: center;
+}
+
+.gift-certificate {
+    width: 40%;
+    border: 1px solid #60a3bc;
+    border-radius: 20px;
+    margin: 10px auto 10px auto;
+    background-color: #ffe6c8;
+}
+
+.gift-certificate a {
+    text-decoration: none;
+    color: #3c6382;
+}
+
 /* SECTION ABOUT */
 
 #about {
@@ -80,7 +121,7 @@ section {
 }
 
 #about div {
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     width: 500px;
 }
 
