@@ -16,7 +16,7 @@ title: Ольга Мырсикова
         menu.style.display = "none";
         moreButton.style.display = "block";
         hideButton.style.display = "hide";
-        jumpToService();
+        jumpToServices();
       }
     }
 
@@ -32,7 +32,7 @@ title: Ольга Мырсикова
         menu.style.display = "none";
         moreButton.style.display = "block";
         hideButton.style.display = "hide";
-        jumpToService();
+        jumpToServices();
       }
     }
 
@@ -48,7 +48,14 @@ title: Ольга Мырсикова
         menu.style.display = "none";
         moreButton.style.display = "block";
         hideButton.style.display = "hide";
+        jumpToServices();
       }
+    }
+
+    function jumpToServices()    {
+        var url = location.href;
+        location.href = "#services";
+        history.replaceState(null,null,url);
     }
 
 </script>
