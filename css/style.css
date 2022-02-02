@@ -98,6 +98,31 @@ header {
     border-radius: 20px;
 }
 
+#gift-certificate {
+    width: 40%;
+    border: 1px solid #60a3bc;
+    border-radius: 20px;
+    margin: 10px auto 10px auto;
+    background-color: #ffe6c8;
+}
+
+#gift-certificate a {
+    text-decoration: none;
+    color: #3c6382;
+}
+
+#find-service {
+    width: 40%;
+    border: 1px solid #60a3bc;
+    border-radius: 20px;
+    margin: 10px auto 10px auto;
+}
+
+#find-service a {
+    text-decoration: none;
+    color: #3c6382;
+}
+
 /* SECTION ABOUT */
 
 #about {
@@ -209,6 +234,7 @@ footer {
 
 footer a {
     color: white;
+    font-weight: 800;
 }
 
 .footer-icon-a {

@@ -8,6 +8,14 @@ section {
     padding: 50px;
 }
 
+a {
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #f6b93b;
+}
+
 /* HEADER */
 
 #menu-button {
@@ -37,7 +45,6 @@ section {
 
 #menu-768 a {
     text-decoration: none;
-    transition: color 0.5s ease;
     color: #3c6382;
 }
 
@@ -82,7 +89,7 @@ section {
 .service {
     border: none;
     margin: 0px;
-    padding: 0px 0px 0 5px;
+    padding: 0px 0px 0px 5px;
 }
 
 .service h4 {
@@ -96,19 +103,12 @@ section {
 
 .service-button {
     text-align: center;
+    cursor: pointer;
+    transition: color 0.5s ease;
 }
 
-.gift-certificate {
-    width: 40%;
-    border: 1px solid #60a3bc;
-    border-radius: 20px;
-    margin: 10px auto 10px auto;
-    background-color: #ffe6c8;
-}
-
-.gift-certificate a {
-    text-decoration: none;
-    color: #3c6382;
+.service-button:hover {
+    color: #fad390;
 }
 
 /* SECTION ABOUT */
@@ -152,14 +152,6 @@ section {
 
 /* SECTION CONTACTS */
 
-.contacts-row a {
-    transition: color 0.5s ease;
-}
-
-.contacts-row a:hover {
-    color: #f6b93b;
-}
-
 .contacts-icon {
     transition: fill 0.5s ease;
 }
@@ -169,3 +161,11 @@ section {
 }
 
 /* FOOTER */
+
+.footer-icon-svg {
+    transition: fill 0.5s ease;
+}
+
+.footer-icon-svg:hover {
+    fill: #f6b93b;
+}
