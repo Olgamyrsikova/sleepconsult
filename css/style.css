@@ -207,13 +207,6 @@ header {
     justify-content: center;
 }
 
-#stuff-content div {
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-}
-
 /* SECTION CONTACTS */
 
 #contacts-content {
