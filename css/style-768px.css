@@ -71,38 +71,25 @@ a:hover {
     background-color: white;
 }
 
-#services #services-content {
+#services-content {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
 
+#gift-certificate {
+    width: 40%;
+}
+
+#find-service {
+    width: 40%;
+}
+
 .service-group {
     width: 30%;
-    text-align: left;
-}
-
-.service-group h3 {
-    text-align: center;
-}
-
-.service {
-    border: none;
-    margin: 0px;
-    padding: 0px 0px 0px 5px;
-}
-
-.service h4 {
-    text-align: center;
-}
-
-.service-star {
-    text-align: center;
-    color: #fad390;
 }
 
 .service-button {
-    text-align: center;
     cursor: pointer;
     transition: color 0.5s ease;
 }
@@ -151,6 +138,15 @@ a:hover {
 }
 
 /* SECTION CONTACTS */
+
+#contacts-content {
+    flex-direction: row;
+}
+
+#contacts-content div {
+    margin: 0px 20px 0 20px;
+    width: 300px;
+}
 
 .contacts-icon {
     transition: fill 0.5s ease;
