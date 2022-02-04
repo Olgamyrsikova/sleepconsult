@@ -180,9 +180,7 @@ header {
   
 .photos img {
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid grey;
+    padding: 0px 10px 0 10px;
 }
   
 #gallery {
