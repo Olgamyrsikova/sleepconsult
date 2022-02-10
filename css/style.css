@@ -193,16 +193,33 @@ header {
     background-color: #ffe6c8;
 }
 
-/* SECTION STUFF */
+/* SECTION BLOG */
 
-#stuff {
+#blog {
     background-color: #adc0c7;
 }
 
-#stuff-content {
+#blog-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+}
+
+.blog-preview {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.blog-preview-content {
+    text-align: left;
+}
+
+.blog-preview-more {
+    margin-top: 20px;
 }
 
 /* SECTION CONTACTS */

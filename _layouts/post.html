@@ -1,23 +1,17 @@
 ---
-title: Ольга Мырсикова
 ---
 
 <!DOCTYPE html>
 <html lang="ru-RU">
 	<head>
 		
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style-768px.css" media="screen and (min-width:768px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/post.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/post-768px.css" media="screen and (min-width:768px)">
 
 		<title>{{ page.title }}</title>
 		<meta charset="UTF-8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- Feedback Gallery -->
-		<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
-		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
 
 		<!-- Smooth Scrolling -->
 		<script>
@@ -38,28 +32,28 @@ title: Ольга Мырсикова
 
 	</head>
 	<body>
-
+		
 		{% include header.html %}
+
+		{% include home.html %}
 
 		<main>
 
-           	{% include home.html %}
-        
-            {% include services.html %}
-        
-            {% include about.html %}
-        
-            {% include feedback.html %}
-        
-            {% include course.html %}
-        
-            {% include contacts.html %}
-        
-            {% include blog.html %}
-        
-        </main>
+			<div id="post">
+				<h1 id="post-title">{{ page.title }}</h1>
+				
+				<div id="post-date">
+					<p>{{ page.date | date: "%-d.%m.%Y" }}</p>
+				</div>
+				
+				<div id="post-content">
+					{{ content }}
+				</div>
+			</div>
+
+		</main>
 
 		{% include footer.html %}
 
-	</body>
-</html>
+        </body>
+    </html>

@@ -125,16 +125,11 @@ a:hover {
 
 /* SECTION COURSE */
 
-/* SECTION STUFF */
+/* SECTION BLOG */
 
-#stuff-content {
+#blog-content {
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-}
-
-#stuff-content div {
-    margin: 0 20px 0 20px;
 }
 
 /* SECTION CONTACTS */
