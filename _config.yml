@@ -4,7 +4,7 @@ email: olgamyrsikova@gmail.com
 description: Sleep Consult Web Page
 permalink: /:year/:month/:day/:title
 baseurl: /sleep-consult/
-url: https://iriiiina.github.io/
+url: https://iriiiina.github.io/sleep-consult/
 
 # Build Settings
 markdown: kramdown
