@@ -125,6 +125,10 @@ a:hover {
 
 /* SECTION COURSE */
 
+#course-content {
+    flex-direction: row;
+}
+
 /* SECTION BLOG */
 
 #blog-content {

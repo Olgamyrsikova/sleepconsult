@@ -208,6 +208,17 @@ header {
     background-color: #ffe6c8;
 }
 
+#course-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+#course-content div {
+    margin: 0 30px 0 30px;
+}
+
 /* SECTION BLOG */
 
 #blog {
