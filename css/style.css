@@ -49,7 +49,7 @@ header {
     top: 10px;
     right: 10px;
     width: 30px;
-    fill: black;
+    fill: #636e72;
 }
 
 #menu {
@@ -72,6 +72,20 @@ header {
 #menu a {
     text-decoration: none;
     color: white;
+}
+
+.service-register-button {
+    text-align: center;
+    margin: 30px 40px 30px 40px;
+    padding: 20px;
+    background-color: #3c6382;
+}
+
+.service-register-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /* SECTION HOME */
@@ -148,6 +162,7 @@ header {
 
 .service-button {
     text-align: center;
+    margin: 30px 0 0 0;
 }
 
 /* SECTION ABOUT */
