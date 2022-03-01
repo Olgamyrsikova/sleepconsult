@@ -45,7 +45,7 @@ a:hover {
 
 #menu-768 a {
     text-decoration: none;
-    color: #3c6382;
+    color: rgba(60, 100, 130, 1);
 }
 
 #menu-768 a:hover {
@@ -79,6 +79,11 @@ a:hover {
 
 #gift-certificate {
     width: 40%;
+    transition: background-color 0.5s ease;
+}
+
+#gift-certificate:hover {
+    background-color: rgba(255, 234, 167, 0.5);
 }
 
 #find-service {
@@ -96,6 +101,18 @@ a:hover {
 
 .service-button:hover {
     color: #fad390;
+}
+
+.service-register-button {
+    transition: background-color 0.5s ease;
+}
+
+.service-register-button:hover {
+    background-color: rgba(60, 100, 130, 1.0);
+}
+
+.service-register-button a:hover {
+    color: white;
 }
 
 /* SECTION ABOUT */
@@ -127,6 +144,10 @@ a:hover {
 
 #course-content {
     flex-direction: row;
+}
+
+#course-content div {
+    width: 40%;
 }
 
 /* SECTION BLOG */

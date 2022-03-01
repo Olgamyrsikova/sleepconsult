@@ -7,11 +7,12 @@
 html, body {
 	height: 100%;
     font-family: 'Rubik', sans-serif;
-    color: #34495e;
+    color: rgba(60, 100, 130, 1);
 }
 
 body {
     margin: 0px;
+    font-size: 1em;
 }
 
 a {
@@ -27,10 +28,13 @@ section {
 
 h2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3em;
     margin: 10px 0px 20px 0px;
-    color: #3c6382;
+    color: rgba(60, 100, 130, 1);
+}
+
+ul {
+    list-style-type: circle;
 }
 
 /* HEADER */
@@ -76,15 +80,14 @@ header {
 
 .service-register-button {
     text-align: center;
-    margin: 30px 40px 30px 40px;
+    margin: 20px 40px 30px 40px;
     padding: 20px;
-    background-color: #3c6382;
+    background-color: rgba(60, 100, 130, 0.7);
 }
 
 .service-register-button a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
     font-weight: 400;
 }
 
@@ -113,10 +116,8 @@ header {
 }
 
 #gift-certificate {
-    border: 1px solid #60a3bc;
-    border-radius: 20px;
+    border: 1px solid rgba(60, 100, 130, 0.3);
     margin: 10px auto 10px auto;
-    background-color: #ffe6c8;
 }
 
 #gift-certificate a {
@@ -125,8 +126,7 @@ header {
 }
 
 #find-service {
-    border: 1px solid #60a3bc;
-    border-radius: 20px;
+    border: 1px solid rgba(60, 100, 130, 0.3);
     margin: 10px auto 10px auto;
 }
 
@@ -136,19 +136,31 @@ header {
 
 .service-group {
     margin: 10px;
-    border: 1px solid #60a3bc;
-    border-radius: 20px;
-    text-align: left;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .service-group h3 {
+    font-family: 'Amatic SC', cursive;
+    color: rgba(60, 100, 130, 0.9);
     text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    padding: 10px 0px 40px 0px;
+    margin: 0px;
 }
 
 .service {
     border: none;
     margin: 0px;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+}
+
+.service-icon {
+    height: 100px;
+    margin: 20px 0px 0px 0px;
+    stroke: rgba(60, 100, 130, 0.7);
 }
 
 .service-star {
@@ -158,6 +170,17 @@ header {
 
 .service h4 {
     text-align: center;
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.service-price {
+    font-weight: 800;
+}
+
+#course-price {
+    margin: 40px 0px 40px 0px;
 }
 
 .service-button {
@@ -222,7 +245,7 @@ header {
 /* SECTION BLOG */
 
 #blog {
-    background-color: #adc0c7;
+    background-color: rgba(60, 100, 130, 0.3);;
 }
 
 #blog-content {
@@ -265,7 +288,7 @@ header {
 .contacts-icon {
     height: 30px;
     vertical-align: middle;
-    fill: #3c6382;
+    fill: rgba(60, 100, 130, 1);
 }
 
 .contacts-icon-a {
