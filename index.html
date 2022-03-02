@@ -7,31 +7,18 @@ title: Ольга Мырсикова
 	<head>
 		
 		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-768px.css" media="screen and (min-width:768px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-480px.css" media="screen and (max-width:479px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-640px.css" media="screen and (min-width:480px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-768px.css" media="screen and (min-width:640px)">
+		<!--<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-768px.css" media="screen and (min-width:768px)">-->
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-1024px.css" media="screen and (min-width:768px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-1200px.css" media="screen and (min-width:1024px)">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-infinity.css" media="screen and (min-width:1200px)">
 
 		<!-- Feedback Gallery -->
 		<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
 		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
-
-		<!-- Smooth Scrolling -->
-		<script>
-		$(document).on('click', 'a[href^="#"]', function (event) {
-			event.preventDefault();
-			
-			$('html, body').animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 500);
-		});
-		</script>
-
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#FFFFFF">
-
-		<link rel="manifest" href="/manifest.json">
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,10 +32,18 @@ title: Ольга Мырсикова
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- SEO -->
-		<meta name="description" content="">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{ site.baseurl }}/assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}{{ site.baseurl }}/assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}{{ site.baseurl }}/assets/favicons/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#FFFFFF">
+
+		<link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/manifest.json">
+
+		<meta name="description" content="Я - дипломированный консультант по детскому сну и моё единственное искреннее стремление — помогать мамам восстановить свой ресурс, почувствовать себя легче и увереннее путем работы над сном их малышей.">
 		<meta property="og:url" content="https://sleep-consult.ru/">
 		<meta property="og:title" content="Ольга Мырсикова | Консультант по детскому сну">
-		<meta property="og:description" content="">
+		<meta property="og:description" content="Я - дипломированный консультант по детскому сну и моё единственное искреннее стремление — помогать мамам восстановить свой ресурс, почувствовать себя легче и увереннее путем работы над сном их малышей.">
 		<meta property="og:image" content="https://sleep-consult.ru/assets/favicons/preview.jpg"/>
 		<meta property="og:locale" content="ru-RU"/>
 

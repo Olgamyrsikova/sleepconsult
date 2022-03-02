@@ -94,9 +94,9 @@ header {
 /* SECTION HOME */
 
 #home {
-    background: url("../assets/img/bed.JPG") no-repeat center center fixed;
     background-size: cover;
     height: 500px;
+    text-align: left;
 }
 
 #home div {

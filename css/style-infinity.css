@@ -1,0 +1,5 @@
+#home {
+    background: url("../assets/img/bed-original.JPG") no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+}
