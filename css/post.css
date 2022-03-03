@@ -7,11 +7,12 @@
 html, body {
 	height: 100%;
     font-family: 'Rubik', sans-serif;
-    color: #34495e;
+    color: rgba(60, 100, 130, 1);
 }
 
 body {
     margin: 0px;
+    font-size: 1em;
 }
 
 a {
@@ -35,7 +36,7 @@ header {
     top: 10px;
     right: 10px;
     width: 30px;
-    fill: black;
+    fill: #636e72;
 }
 
 #menu {
@@ -81,16 +82,41 @@ header {
 
 #post-title {
     font-family: 'Amatic SC', cursive;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3em;
     margin: 70px 0px 20px 0px;
-    color: #3c6382;
     text-align: center;
 }
 
 #post-date {
     text-align: center;
 }
+
+/* BACK */
+
+#back {
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border: 1px rgba(60, 100, 130, 1) dotted;
+    padding: 10px 20px 5px 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#back a {
+    border: 0;
+}
+    
+#back-icon {
+    height: 40px;
+    fill: rgba(60, 100, 130, 1);
+    transition: fill 0.3s;
+}
+
+#back-icon:hover {
+    fill: orange;
+} 
 
 /* FOOTER */
 
@@ -109,7 +135,7 @@ footer a {
 
 .footer-icon-a {
     text-decoration: none;
-    margin: 0 5px 0 5px;
+    margin: 0 10px 0 10px;
 }
 
 .footer-icon-svg {
