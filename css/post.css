@@ -64,7 +64,7 @@ header {
 /* SECTION HOME */
 
 #home {
-    background: url("../assets/img/bed.JPG") no-repeat center center fixed;
+    background: url("../assets/img/bed.JPG") no-repeat center center;
     background-size: cover;
     height: 500px;
 }

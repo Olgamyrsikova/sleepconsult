@@ -1,5 +1,9 @@
 #home {
-    background: url("../assets/img/bed-original.JPG") no-repeat center center fixed;
+    background: url('../assets/img/bed-original.JPG') no-repeat center center;
+    -webkit-background-size: 2000px 1175px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 500px;
 }

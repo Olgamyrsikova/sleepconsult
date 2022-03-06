@@ -1,5 +1,5 @@
 #home {
-    background: url("../assets/img/bed-1200px.jpg") no-repeat center center fixed;
+    background: url("../assets/img/bed-1200px.jpg") no-repeat center center;
     background-size: cover;
     height: 500px;
 }
