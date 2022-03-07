@@ -362,30 +362,26 @@ header {
     background-color: white;
 }
 
-.feedback-screenshot img {
-    max-width: 1080px;
-    max-height: 1920px;;
-}
-
-.photos {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  
-.photos img {
+.feedback-screenshot {
     width: 100%;
     padding: 0px 10px 0 10px;
 }
-  
-#gallery {
-    padding-bottom: 20px;
-}
 
-@media only screen and (min-width: 768px) {
-    .photos {
-        margin-left: 100px;
-        margin-right: 100px;
-      }
+#feedback-content {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 20px;
+  }
+
+@media only screen and (min-width: 1000px) {
+      .feedback-screenshot {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1350px) {
+    .feedback-screenshot {
+      width: 30%;
+  }
 }
 
 /* SECTION COURSE */
