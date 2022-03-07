@@ -347,9 +347,6 @@ header {
     .gift-certificate:hover {
         background-color: rgba(255, 230, 200, 1);
     }
-    .gift-certificate a:hover {
-        color: rgba(60, 100, 130, 1);
-    }
     .service-group {
         width: 30%;
     }
@@ -364,10 +361,10 @@ header {
         transition: background-color 0.5s ease;
     }
     .service-register-button:hover {
-        background-color: rgba(60, 100, 130, 0.9);
+        background-color: rgba(255, 230, 200, 1);
     }
     .service-register-button a:hover {
-        color: white;
+        color: rgba(60, 100, 130, 1);
     }
 }
 
