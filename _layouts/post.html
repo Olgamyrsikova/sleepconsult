@@ -4,31 +4,15 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 	<head>
-		
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/post.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/post-768px.css" media="screen and (min-width:768px)">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-480px.css" media="screen and (max-width:479px)">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-640px.css" media="screen and (min-width:480px)">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-768px.css" media="screen and (min-width:640px)">	
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-1024px.css" media="screen and (min-width:768px)">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-1200px.css" media="screen and (min-width:1024px)">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style-infinity.css" media="screen and (min-width:1200px)">
 
-		<title>{{ page.title }}</title>
 		<meta charset="UTF-8">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		
+		<!-- SEO -->
 
-		<!-- Smooth Scrolling -->
-		<script>
-		$(document).on('click', 'a[href^="#"]', function (event) {
-			event.preventDefault();
-			
-			$('html, body').animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 500);
-		});
-		</script>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style.css">
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,10 +31,6 @@
 
 			<div id="post">
 				<h1 id="post-title">{{ page.title }}</h1>
-				
-				<div id="post-date">
-					<p>{{ page.date | date: "%-d.%m.%Y" }}</p>
-				</div>
 				
 				<div id="post-content">
 					{{ content }}

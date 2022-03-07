@@ -37,6 +37,21 @@ ul {
     list-style-type: circle;
 }
 
+@media only screen and (min-width: 768px) {
+    main {
+	    padding-top: 40px;
+    }
+    a {
+        transition: color 0.5s ease;
+    }
+    a:hover {
+        color: rgba(240, 180, 60, 1);
+    }
+    section {
+        padding: 50px;
+    }
+}
+
 /* HEADER */
 
 header {
@@ -91,12 +106,98 @@ header {
     font-weight: 400;
 }
 
+@media only screen and (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #menu-768 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .menu-star {
+        color: rgba(240, 180, 60, 1);
+    }
+    #menu-768 p {
+        margin: 10px;
+    }
+    #menu-768 a {
+        text-decoration: none;
+        color: rgba(60, 100, 130, 1);
+    }
+    #menu-768 a:hover {
+        color: rgba(240, 180, 60, 1);
+    }
+}
+
 /* SECTION HOME */
 
+@media only screen and (max-width: 480px) {
+    #home {
+        background: url('../assets/img/bed-480px.jpg') no-repeat center center;
+        height: 320px;
+    }
+    #home div {
+        margin: 100px 0 0 0;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+    #home {
+        background: url('../assets/img/bed-640px.jpg') no-repeat center center;
+        height: 427px;
+    }
+    #home div {
+        margin: 200px 0 0 0;
+    }
+}
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+    #home {
+        background: url('../assets/img/bed-768px.jpg') no-repeat center center;
+        height: 500px;
+    }
+    #home div {
+        margin: 200px 0 0 0;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        background: url('../assets/img/bed-1024px.jpg') no-repeat center center;
+        height: 500px;
+    }
+    #home div {
+        margin: 200px 0 0 0;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #home {
+        background: url('../assets/img/bed-1200px.jpg') no-repeat center center;
+        height: 500px;
+    }
+    #home div {
+        margin: 200px 0 0 0;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    #home {
+        background: url('../assets/img/bed-original.JPG') no-repeat center center;
+        height: 500px;
+    }
+    #home div {
+        margin: 200px 0 0 0;
+    }
+}
+
 #home {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height: 500px;
-    text-align: left;
 }
 
 #home div {
@@ -104,7 +205,6 @@ header {
     border-radius: 10px;
     width: 330px;
     padding: 10px 30px;
-    margin: 200px 0 0 0;
 }
 
 /* SECTION SERVICES */
@@ -183,6 +283,46 @@ header {
     margin: 30px 0 30px 0;
 }
 
+@media only screen and (min-width: 768px) {
+    #services {
+        background-color: white;
+    }
+    #services-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .gift-certificate {
+        width: 40%;
+        transition: background-color 0.5s ease;
+    }
+    .gift-certificate:hover {
+        background-color: rgba(255, 230, 200, 1);
+    }
+    .gift-certificate a:hover {
+        color: rgba(60, 100, 130, 1);
+    }
+    .service-group {
+        width: 30%;
+    }
+    .service-button {
+        cursor: pointer;
+        transition: color 0.5s ease;
+    }
+    .service-button:hover {
+        color: rgba(240, 180, 60, 1);
+    }
+    .service-register-button {
+        transition: background-color 0.5s ease;
+    }
+    .service-register-button:hover {
+        background-color: rgba(60, 100, 130, 0.9);
+    }
+    .service-register-button a:hover {
+        color: white;
+    }
+}
+
 /* SECTION ABOUT */
 
 #about {
@@ -198,6 +338,22 @@ header {
 
 #about img {
     width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #about {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #about div {
+        padding: 0px 50px 0px 50px;
+        width: 500px;
+    }
+    #about img {
+        width: 500px;
+    }
 }
 
 /* SECTION FEEDBACK */
@@ -220,6 +376,13 @@ header {
     padding-bottom: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    .photos {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+}
+
 /* SECTION COURSE */
 
 #course {
@@ -235,6 +398,15 @@ header {
 
 #course-content div {
     margin: 0 30px 0 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    #course-content {
+        flex-direction: row;
+    }
+    #course-content div {
+        width: 40%;
+    }
 }
 
 /* SECTION BLOG */
@@ -264,6 +436,18 @@ header {
     margin-top: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    #blog-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .blog-preview {
+        margin: 10px;
+        padding: 20px;
+        width: 30%;
+    }
+}
+
 /* SECTION CONTACTS */
 
 #contacts-content {
@@ -290,6 +474,73 @@ header {
     text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+    #contacts-content {
+        flex-direction: row;
+    }
+    #contacts-content div {
+        margin: 0px 20px 0 20px;
+        width: 300px;
+    }
+    .contacts-icon {
+        transition: fill 0.5s ease;
+    }
+    .contacts-icon:hover {
+        fill: rgba(240, 180, 60, 1);
+    }
+}
+
+/* POST */
+
+#post {
+    padding: 0 20px 0 20px;
+    margin: 20px 0 100px 0;
+}
+
+#post-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    margin: 70px 0px 20px 0px;
+    text-align: center;
+}
+
+#post-date {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #post {
+        padding: 0 100px 0 100px;
+    }
+}
+
+/* BACK */
+
+#back {
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border: 1px rgba(60, 100, 130, 1) dotted;
+    padding: 10px 20px 5px 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#back a {
+    border: 0;
+}
+    
+#back-icon {
+    height: 40px;
+    fill: rgba(60, 100, 130, 1);
+    transition: fill 0.3s;
+}
+
+#back-icon:hover {
+    fill: orange;
+} 
+
 /* FOOTER */
 
 footer {
@@ -313,4 +564,13 @@ footer a {
 .footer-icon-svg {
     width: 30px;
     fill: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-icon-svg {
+        transition: fill 0.5s ease;
+    }
+    .footer-icon-svg:hover {
+        fill: rgba(240, 180, 60, 1);
+    }
 }
