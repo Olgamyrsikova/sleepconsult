@@ -2,34 +2,23 @@
     <h2>Отзывы</h2>
 
     <div id="feedback-content">
-        <img class="feedback-screenshot" src="assets/feedback/feedback-1.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-2.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-3.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-4.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-5.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-6.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-7.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-8.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-9.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-10.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-11.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-12.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-13.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-14.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-15.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-16.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-17.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-18.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-19.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-20.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-21.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-22.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-23.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-24.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        <img class="feedback-screenshot" src="assets/feedback/feedback-25.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
+        {% for index in (1..25) %}
+        <!--
+        <picture>
+            <source srcset="assets/feedback/feedback-{{ index }}.webp" type="image/webp">
+            <source srcset="assets/feedback/feedback-{{ index }}.jpg" type="image/jpeg">
+            <img class="feedback-screenshot" src="assets/feedback/feedback-{{ index }}.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
+        </picture>
+        -->
+        <img class="feedback-screenshot" src="assets/feedback/feedback-{{ index }}.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
+        {% endfor %}
     </div>
 
-    <img style="width: 300px; height: 300px; margin: 40px 0px 40px 0px;" src="assets/icon/crib.png" alt="Детская кроватка"/>
+    <picture>
+        <source srcset="assets/img/crib-300px.webp" type="image/webp">
+        <source srcset="assets/img/crib-300px.png" type="image/png">
+        <img src="assets/img/crib-300px.png" alt="Детская кроватка" style="width: 300px; height: 300px; margin: 40px 0px 40px 0px;">
+    </picture>
 
     <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="lib/slick/slick.min.js"></script>

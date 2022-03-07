@@ -139,54 +139,102 @@ header {
 /* SECTION HOME */
 
 @media only screen and (max-width: 480px) {
-    #home {
-        background: url('../assets/img/bed-480px.jpg') no-repeat center center;
-        height: 320px;
+    @supports (background: url('../assets/img/bed-480px.webp')) {
+        #home {
+            background: url('../assets/img/bed-480px.webp') no-repeat center center;
+            height: 320px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed-480px.webp')) {
+        #home {
+            background: url('../assets/img/bed-480px.jpg') no-repeat center center;
+            height: 320px;
+        }
     }
     #home div {
         margin: 100px 0 0 0;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 640px) {
-    #home {
-        background: url('../assets/img/bed-640px.jpg') no-repeat center center;
-        height: 427px;
+    @supports (background: url('../assets/img/bed-640px.webp')) {
+        #home {
+            background: url('../assets/img/bed-640px.webp') no-repeat center center;
+            height: 427px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed-640px.webp')) {
+        #home {
+            background: url('../assets/img/bed-640px.jpg') no-repeat center center;
+            height: 427px;
+        }
     }
     #home div {
         margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-    #home {
-        background: url('../assets/img/bed-768px.jpg') no-repeat center center;
-        height: 500px;
+    @supports (background: url('../assets/img/bed-768px.webp')) {
+        #home {
+            background: url('../assets/img/bed-768px.webp') no-repeat center center;
+            height: 500px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed-768px.webp')) {
+        #home {
+            background: url('../assets/img/bed-768px.jpg') no-repeat center center;
+            height: 500px;
+        }
     }
     #home div {
         margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #home {
-        background: url('../assets/img/bed-1024px.jpg') no-repeat center center;
-        height: 500px;
+    @supports (background: url('../assets/img/bed-1024px.webp')) {
+        #home {
+            background: url('../assets/img/bed-1024px.webp') no-repeat center center;
+            height: 500px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed-1024px.webp')) {
+        #home {
+            background: url('../assets/img/bed-1024px.jpg') no-repeat center center;
+            height: 500px;
+        }
     }
     #home div {
         margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    #home {
-        background: url('../assets/img/bed-1200px.jpg') no-repeat center center;
-        height: 500px;
+    @supports (background: url('../assets/img/bed-1200px.webp')) {
+        #home {
+            background: url('../assets/img/bed-1200px.webp') no-repeat center center;
+            height: 500px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed-1200px.webp')) {
+        #home {
+            background: url('../assets/img/bed-1200px.jpg') no-repeat center center;
+            height: 500px;
+        }
     }
     #home div {
         margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 1201px) {
-    #home {
-        background: url('../assets/img/bed-original.JPG') no-repeat center center;
-        height: 500px;
+    @supports (background: url('../assets/img/bed.webp')) {
+        #home {
+            background: url('../assets/img/bed.webp') no-repeat center center;
+            height: 500px;
+        }
+    }
+    @supports not (background: url('../assets/img/bed.webp')) {
+        #home {
+            background: url('../assets/img/bed.jpg') no-repeat center center;
+            height: 500px;
+        }
     }
     #home div {
         margin: 200px 0 0 0;
