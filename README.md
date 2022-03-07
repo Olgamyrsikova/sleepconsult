@@ -9,6 +9,7 @@
 
 * Jekyll https://jekyllrb.com
 * Simple Icons https://simpleicons.org
+* Slick Carousel https://kenwheeler.github.io/slick/
 
 ## Colors
 

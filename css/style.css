@@ -337,10 +337,11 @@ header {
 }
 
 #about img {
-    width: 100%;
+    width: 500px;
+    height: 749px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #about {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -349,10 +350,7 @@ header {
     }
     #about div {
         padding: 0px 50px 0px 50px;
-        width: 500px;
-    }
-    #about img {
-        width: 500px;
+        width: 100%;
     }
 }
 
