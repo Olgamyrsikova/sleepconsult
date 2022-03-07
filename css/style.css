@@ -362,6 +362,11 @@ header {
     background-color: white;
 }
 
+.feedback-screenshot img {
+    max-width: 1080px;
+    max-height: 1920px;;
+}
+
 .photos {
     margin-left: 25px;
     margin-right: 25px;
