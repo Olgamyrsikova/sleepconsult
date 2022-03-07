@@ -2,7 +2,7 @@
 name: Ольга Мырсикова
 email: olgamyrsikova@gmail.com
 description: Sleep Consult Web Page
-permalink: /:year/:month/:day/:title
+permalink: /:title
 baseurl: /sleep-consult
 url: https://iriiiina.github.io
 
