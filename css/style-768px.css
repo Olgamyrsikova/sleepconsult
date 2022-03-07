@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    color: #f6b93b;
+    color: rgba(240, 180, 60, 1);
 }
 
 /* HEADER */
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .menu-star {
-    color: #fad390;
+    color: rgba(240, 180, 60, 1);
 }
 
 #menu-768 p {
@@ -49,7 +49,7 @@ a:hover {
 }
 
 #menu-768 a:hover {
-    color: #f6b93b;
+    color: rgba(240, 180, 60, 1);
 }
 
 /* SECTION HOME */
@@ -58,10 +58,6 @@ a:hover {
     background: url("../assets/img/bed-768px.jpg") no-repeat center center;
     background-size: cover;
     height: 500px;
-}
-
-#home div {
-    padding: 200px 0 0 100px;
 }
 
 /* SECTION SERVICES */
@@ -82,7 +78,7 @@ a:hover {
 }
 
 .gift-certificate:hover {
-    background-color: rgba(255, 234, 167, 0.5);
+    background-color: rgba(255, 230, 200, 1);
 }
 
 .gift-certificate a:hover {
@@ -99,7 +95,7 @@ a:hover {
 }
 
 .service-button:hover {
-    color: #fad390;
+    color: rgba(240, 180, 60, 1);
 }
 
 .service-register-button {
@@ -107,7 +103,7 @@ a:hover {
 }
 
 .service-register-button:hover {
-    background-color: rgba(60, 100, 130, 1.0);
+    background-color: rgba(60, 100, 130, 0.9);
 }
 
 .service-register-button a:hover {
@@ -178,7 +174,7 @@ a:hover {
 }
 
 .contacts-icon:hover {
-    fill: #f6b93b;
+    fill: rgba(240, 180, 60, 1);
 }
 
 /* FOOTER */
@@ -188,5 +184,5 @@ a:hover {
 }
 
 .footer-icon-svg:hover {
-    fill: #f6b93b;
+    fill: rgba(240, 180, 60, 1);
 }
