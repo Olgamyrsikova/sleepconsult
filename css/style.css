@@ -480,6 +480,17 @@ header {
     margin-top: 20px;
 }
 
+#blog-button {
+    border: 1px solid rgba(60, 100, 130, 0.3);
+    margin: 10px auto 10px auto;
+    background-color: white;
+}
+
+#blog-button a {
+    text-decoration: none;
+    color: rgba(60, 100, 130, 1);
+}
+
 @media only screen and (min-width: 768px) {
     #blog-content {
         flex-direction: row;
@@ -489,6 +500,13 @@ header {
         margin: 10px;
         padding: 20px;
         width: 30%;
+    }
+    #blog-button {
+        width: 40%;
+        transition: background-color 0.5s ease;
+    }
+    #blog-button:hover {
+        background-color: rgba(255, 230, 200, 1);
     }
 }
 
@@ -514,10 +532,6 @@ header {
     fill: rgba(60, 100, 130, 1);
 }
 
-.contacts-icon-a {
-    text-decoration: none;
-}
-
 @media only screen and (min-width: 768px) {
     #contacts-content {
         flex-direction: row;
@@ -528,9 +542,6 @@ header {
     }
     .contacts-icon {
         transition: fill 0.5s ease;
-    }
-    .contacts-icon:hover {
-        fill: rgba(240, 180, 60, 1);
     }
 }
 
