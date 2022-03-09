@@ -524,9 +524,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#contacts-content div {
     text-align: left;
 }
 
@@ -653,10 +650,12 @@ header {
 
 footer {
     width: 100%;
-    text-align: center;
     background-color: rgba(100, 90, 80, 1);
     padding: 10px 0 10px 0;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer a {
@@ -675,6 +674,12 @@ footer a {
 }
 
 @media only screen and (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+    footer div {
+        margin: 0px 20px 0px 20px;
+    }
     .footer-icon-svg {
         transition: fill 0.5s ease;
     }
