@@ -9,7 +9,7 @@
 				<picture>
 					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.webp" type="image/webp">
 					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" type="image/png">
-					<img class="blog-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" alt="Илюстрация поста">
+					<img class="blog-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" loading="lazy" alt="Илюстрация поста">
 				</picture>
 			</a>
 			<p class="blog-preview-title"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></p>

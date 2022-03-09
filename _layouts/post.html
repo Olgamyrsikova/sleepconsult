@@ -67,7 +67,7 @@
 						<picture>
 							<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.webp" type="image/webp">
 							<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" type="image/png">
-							<img class="post-3-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" alt="Илюстрация поста">
+							<img class="post-3-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" loading="lazy" alt="Илюстрация поста">
 						</picture>
 					</a>
 					<p class="post-3-title"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></p>
