@@ -383,7 +383,7 @@ header {
 
 #about img {
     width: 500px;
-    height: 749px;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 1200px) {
