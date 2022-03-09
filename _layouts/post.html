@@ -20,12 +20,19 @@
 
 		<meta name="description" content="{{ post.excerpt }}"/>
 		<meta property="og:url" content="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
-		<meta property="og:type" content="article"/> 
+		<meta property="og:type" content="article"/>
+		<meta property="article:publisher" content="https://sleepconsult.ru"/>
+		<meta property="article:author" content="Ольга Мырсикова" />
+		<meta property="article:tag" content="{{ page.tag }}"/>
 		<meta property="og:title" content="{{ page.title }} | Ольга Мырсикова"/>
+		<meta property="og:site_name" content="Ольга Мырсикова | Консультант по детскому сну"/>
 		<meta property="og:description" content="{{ post.excerpt }}"/>
 		<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/preview.png"/>
-		<meta property="og:image:width" content="1080"/>
-		<meta property="og:image:height" content="721"/>
+		<meta property="og:image:url" content="{{ site.url }}{{ site.baseurl }}/assets/preview.png"/>
+		<meta property="og:image:secure_url" content="{{ site.url }}{{ site.baseurl }}/assets/preview.png"/>
+		<meta property="og:image:type" content="image/png"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="801"/>
 		<meta property="og:locale" content="ru-RU"/>
 
 		<!-- CSS -->
@@ -42,16 +49,34 @@
 		
 		{% include header-post.html %}
 
-		{% include home.html %}
-
 		<main>
 
 			<div id="post">
 				<h1 id="post-title">{{ page.title }}</h1>
-				
 				<div id="post-content">
 					{{ content }}
 				</div>
+			</div>
+
+			<p id="post-stars">&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;&nbsp;&starf;</p>
+
+			<div id="post-3">
+				{% for post in site.posts limit:3 %}
+				<div class="post-3-preview">
+					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+						<picture>
+							<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.webp" type="image/webp">
+							<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" type="image/png">
+							<img class="post-3-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" alt="Илюстрация поста">
+						</picture>
+					</a>
+					<p class="post-3-title"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></p>
+					<div class="post-3-content">
+						{{ post.excerpt }}
+					</div>
+					<div class="post-3-more"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">читать дальше</a></div>
+				</div>
+				{% endfor %}
 			</div>
 
 			<div id="back">
@@ -60,7 +85,7 @@
 						<path fill="currentColor" d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"/>
 					</svg>
 				</a>
-			  </div>
+			</div>
 
 		</main>
 

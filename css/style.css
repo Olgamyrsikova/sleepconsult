@@ -456,7 +456,7 @@ header {
 /* SECTION BLOG */
 
 #blog {
-    background-color: rgba(60, 100, 130, 0.3);;
+    background-color: rgba(60, 100, 130, 0.3);
 }
 
 #blog-content {
@@ -470,6 +470,7 @@ header {
     border-radius: 20px;
     margin: 10px;
     padding: 20px;
+    max-width: 500px;
 }
 
 .blog-preview-content {
@@ -489,6 +490,10 @@ header {
 #blog-button a {
     text-decoration: none;
     color: rgba(60, 100, 130, 1);
+}
+
+.blog-image {
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -548,8 +553,11 @@ header {
 /* POST */
 
 #post {
-    padding: 0 20px 0 20px;
-    margin: 20px 0 100px 0;
+    width: 100%;
+}
+
+#post-image {
+    width: 100%;
 }
 
 #post-title {
@@ -559,13 +567,53 @@ header {
     text-align: center;
 }
 
-#post-date {
+#post-content {
+    padding: 0 20px 0 20px;
+    margin: 20px 0 100px 0;
+}
+
+#post-stars {
+    color: rgba(240, 180, 60, 1);
     text-align: center;
 }
 
+#post-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-3-preview {
+    margin: 10px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.post-3-image {
+    width: 100%;
+}
+
+.post-3-content {
+    text-align: left;
+}
+
+.post-3-more {
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 768px) {
-    #post {
+    #post-content {
         padding: 0 100px 0 100px;
+    }
+
+    #post-3 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .post-3-preview {
+        margin: 10px;
+        padding: 20px;
+        width: 30%;
     }
 }
 
@@ -589,6 +637,8 @@ header {
 #back-icon {
     height: 40px;
     fill: rgba(60, 100, 130, 1);
+    stroke: white;
+    stroke-width: 10px;
     transition: fill 0.3s;
 }
 

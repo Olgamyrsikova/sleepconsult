@@ -5,7 +5,13 @@
 
         {% for post in site.posts %}
 		<div class="blog-preview">
-			<!-- <a class="preview-image-a" href="{{ post.url }}"><img class="preview-image" src="{{ site.url }}/assets/post-images/{{post.date | date: '%Y-%m-%d' }}/preview.jpg" alt="Илюстрация поста"></a> -->
+			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+				<picture>
+					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.webp" type="image/webp">
+					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" type="image/png">
+					<img class="blog-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" alt="Илюстрация поста">
+				</picture>
+			</a>
 			<p class="blog-preview-title"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></p>
 			<div class="blog-preview-content">
 				{{ post.excerpt }}
