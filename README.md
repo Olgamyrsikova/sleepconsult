@@ -11,6 +11,8 @@
 * Simple Icons https://simpleicons.org
 * Slick Carousel https://kenwheeler.github.io/slick/
 * Squoosh https://squoosh.app/
+* HTML Checker https://validator.w3.org/nu
+* CSS Validator https://jigsaw.w3.org/css-validator/
 
 ## Colors
 
