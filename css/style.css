@@ -656,6 +656,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 footer a {
@@ -671,17 +672,20 @@ footer a {
 .footer-icon-svg {
     width: 30px;
     fill: white;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
     footer {
         flex-direction: row;
+        text-align: left;
     }
     footer div {
         margin: 0px 20px 0px 20px;
     }
     .footer-icon-svg {
         transition: fill 0.5s ease;
+        margin-top: 10px;
     }
     .footer-icon-svg:hover {
         fill: rgba(240, 180, 60, 1);
