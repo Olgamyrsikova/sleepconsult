@@ -93,19 +93,6 @@ header {
     color: white;
 }
 
-.service-register-button {
-    text-align: center;
-    margin: 20px 40px 30px 40px;
-    padding: 20px;
-    background-color: rgba(60, 100, 130, 0.9);
-}
-
-.service-register-button a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-}
-
 @media only screen and (min-width: 768px) {
     #menu-button {
         display: none;
@@ -168,9 +155,6 @@ header {
             height: 427px;
         }
     }
-    #home div {
-        margin: 200px 0 0 0;
-    }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
     @supports (background: url('../assets/img/bed-768px.webp')) {
@@ -184,9 +168,6 @@ header {
             background: url('../assets/img/bed-768px.jpg') no-repeat center center;
             height: 500px;
         }
-    }
-    #home div {
-        margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -202,9 +183,6 @@ header {
             height: 500px;
         }
     }
-    #home div {
-        margin: 200px 0 0 0;
-    }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     @supports (background: url('../assets/img/bed-1200px.webp')) {
@@ -218,9 +196,6 @@ header {
             background: url('../assets/img/bed-1200px.jpg') no-repeat center center;
             height: 500px;
         }
-    }
-    #home div {
-        margin: 200px 0 0 0;
     }
 }
 @media only screen and (min-width: 1201px) {
@@ -236,6 +211,9 @@ header {
             height: 500px;
         }
     }
+}
+
+@media only screen and (min-width: 481px) {
     #home div {
         margin: 200px 0 0 0;
     }
@@ -322,8 +300,17 @@ header {
     font-weight: 800;
 }
 
-#course-price {
-    margin: 40px 0px 40px 0px;
+.service-register-button {
+    text-align: center;
+    margin: 20px 40px 30px 40px;
+    padding: 20px;
+    background-color: rgba(60, 100, 130, 0.9);
+}
+
+.service-register-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .service-button {
@@ -384,7 +371,6 @@ header {
 #about img {
     width: 500px;
     max-width: 100%;
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -445,12 +431,44 @@ header {
     margin: 0 30px 0 30px;
 }
 
+#course-price {
+    margin: 40px 0px 40px 0px;
+}
+
+.course-button {
+    text-align: center;
+    margin: 20px 40px 30px 40px;
+    padding: 20px;
+    background-color: rgba(60, 100, 130, 0.9);
+}
+
+.course-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 @media only screen and (min-width: 768px) {
     #course-content {
         flex-direction: row;
     }
     #course-content div {
         width: 40%;
+    }
+    .course-button:hover {
+        text-align: center;
+        margin: 20px 40px 30px 40px;
+        padding: 20px;
+        background-color: rgba(60, 100, 130, 0.9);
+    }
+    .course-button {
+        transition: background-color 0.5s ease;
+    }
+    .course-button:hover {
+        background-color: white;
+    }
+    .course-button a:hover {
+        color: rgba(60, 100, 130, 1);
     }
 }
 
@@ -496,7 +514,8 @@ header {
 }
 
 .blog-image {
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -616,35 +635,6 @@ header {
         width: 30%;
     }
 }
-
-/* BACK */
-
-#back {
-    display: block;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    border: 1px rgba(60, 100, 130, 1) dotted;
-    padding: 10px 20px 5px 20px;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-#back a {
-    border: 0;
-}
-    
-#back-icon {
-    height: 40px;
-    fill: rgba(60, 100, 130, 1);
-    stroke: white;
-    stroke-width: 10px;
-    transition: fill 0.3s;
-}
-
-#back-icon:hover {
-    fill: orange;
-} 
 
 /* FOOTER */
 
