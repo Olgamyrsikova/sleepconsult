@@ -21,7 +21,7 @@
 		<meta name="description" content="{{ post.excerpt }}"/>
 		<meta property="og:url" content="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
 		<meta property="og:type" content="article"/>
-		<meta property="article:publisher" content="https://sleepconsult.ru"/>
+		<meta property="article:publisher" content="{{ site.url }}"/>
 		<meta property="article:author" content="Ольга Мырсикова" />
 		<meta property="article:tag" content="{{ page.tag }}"/>
 		<meta property="og:title" content="{{ page.title }} | Ольга Мырсикова"/>
@@ -36,11 +36,9 @@
 		<meta property="og:locale" content="ru-RU"/>
 
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 
