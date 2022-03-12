@@ -5,18 +5,18 @@
 
         {% for post in site.posts %}
 		<div class="blog-preview">
-			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+			<a href="{{ post.url | prepend: site.url }}">
 				<picture>
-					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.webp" type="image/webp">
-					<source srcset="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" type="image/png">
-					<img class="blog-image" src="{{ site.url}}{{ site.baseurl }}/assets/post{{ post.url }}-500px.png" loading="lazy" alt="Илюстрация поста">
+					<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.webp" type="image/webp">
+					<source srcset="{{ site.url}}/assets/post{{ post.url }}-500px.png" type="image/png">
+					<img class="blog-image" src="{{ site.url}}/assets/post{{ post.url }}-500px.png" loading="lazy" alt="Илюстрация поста">
 				</picture>
 			</a>
-			<p class="blog-preview-title"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></p>
+			<p class="blog-preview-title"><a href="{{ post.url prepend: site.url }}">{{ post.title }}</a></p>
 			<div class="blog-preview-content">
 				{{ post.excerpt }}
 			</div>
-			<div class="blog-preview-more"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">читать дальше</a></div>
+			<div class="blog-preview-more"><a href="{{ post.url prepend: site.url }}">читать дальше</a></div>
 		</div>
 		{% endfor %}
 
