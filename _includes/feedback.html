@@ -2,22 +2,13 @@
     <h2>Отзывы</h2>
 
     <div id="feedback-content">
-        {% for index in (1..25) %}
-        
-        <!--
-        <picture>
-            <source srcset="assets/feedback/feedback-{{ index }}.webp" type="image/webp">
-            <source srcset="assets/feedback/feedback-{{ index }}.jpg" type="image/jpeg">
-            <img class="feedback-screenshot" src="assets/feedback/feedback-{{ index }}.jpg" alt="Отзыв о работе с Ольгой Мырсиковой"/>
-        </picture>
-        -->
-        
+        {% for index in (1..25) %}    
         <img class="feedback-screenshot" src="assets/feedback/feedback-{{ index }}.jpg" loading="lazy" alt="Отзыв о работе с Ольгой Мырсиковой"/>
         {% endfor %}
     </div>
 
     <div class="instagram-more">
-        <a href="https://www.instagram.com/stories/highlights/17907375067945995/" target="_blank">
+        <a href="https://www.instagram.com/sleep.consult/" target="_blank">
             <h3>читать больше в Инстаграм</h3>
         </a>
     </div>
