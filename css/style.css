@@ -475,12 +475,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blog-preview {
     background-color: white;
     border-radius: 20px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 20px;
     max-width: 500px;
 }
