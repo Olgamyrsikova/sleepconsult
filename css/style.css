@@ -319,9 +319,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-    #services {
-        background-color: white;
-    }
     #services-content {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -351,6 +348,74 @@ header {
         background-color: rgba(255, 230, 200, 1);
     }
     .service-register-button a:hover {
+        color: rgba(60, 100, 130, 1);
+    }
+}
+
+/* SECTION WEBINARS */
+
+#webinars {
+    background-color: rgba(60, 100, 130, 0.3);
+}
+
+#webinars-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.webinar {
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.webinar h3 {
+    color: rgba(60, 100, 130, 0.9);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 0px 40px 0px;
+    margin: 0px;
+}
+
+.webinar-price {
+    font-weight: 800;
+}
+
+.webinar-register-button {
+    text-align: center;
+    margin: 20px 40px 30px 40px;
+    padding: 20px;
+    background-color: rgba(60, 100, 130, 0.9);
+}
+
+.webinar-register-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+    #webinars-content {
+        flex-direction: row;
+        justify-content: space-evenly; 
+        align-items: flex-start;
+    }
+    .webinar {
+        width: 40%;
+    }
+    .webinar-button:hover {
+        color: rgba(240, 180, 60, 1);
+    }
+    .webinar-register-button {
+        transition: background-color 0.5s ease;
+    }
+    .webinar-register-button:hover {
+        background-color: rgba(255, 230, 200, 1);
+    }
+    .webinar-register-button a:hover {
         color: rgba(60, 100, 130, 1);
     }
 }
