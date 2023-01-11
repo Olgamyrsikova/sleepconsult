@@ -376,12 +376,19 @@ header {
     text-align: center;
     font-size: 1.5em;
     font-weight: 400;
-    padding: 10px 0px 40px 0px;
+    padding: 10px 0px 20px 0px;
     margin: 0px;
 }
 
 .webinar-price {
     font-weight: 800;
+}
+
+.webinar-icon {
+    height: 100px;
+    stroke: rgba(60, 100, 130, 0.7);
+    display: block;
+    margin: auto;
 }
 
 .webinar-register-button {
@@ -400,11 +407,12 @@ header {
 @media only screen and (min-width: 768px) {
     #webinars-content {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly; 
         align-items: flex-start;
     }
     .webinar {
-        width: 40%;
+        width: 30%;
     }
     .webinar-button:hover {
         color: rgba(240, 180, 60, 1);
