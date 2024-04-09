@@ -1,20 +1,25 @@
-# Sleep Consult Web Page
+# Sleep Consult Demo Page
 
-https://sleepconsult.eu
+https://iriiiina.github.io/sleepconsult-demo/
 
 ## Run The Site
-
-    $ bundle install
-    $ bundle exec jekyll serve --watch
+```shell
+bundle install
+```
+```shell
+bundle exec jekyll serve --watch
+```
 
 ## Used Resources
 
 * Jekyll https://jekyllrb.com
 * Simple Icons https://simpleicons.org
-* Slick Carousel https://kenwheeler.github.io/slick/
 * Squoosh https://squoosh.app/
 * HTML Checker https://validator.w3.org/nu
 * CSS Validator https://jigsaw.w3.org/css-validator/
+* Icon Collection https://www.svgrepo.com/collection/simple-line-vectors/
+* SEO Validator https://konversioon.ee
+* Schema Validator https://validator.schema.org
 
 ## Colors
 
