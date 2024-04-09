@@ -1,6 +1,6 @@
-# Sleep Consult Demo Page
+# Sleep Consult Web Page
 
-https://iriiiina.github.io/sleepconsult-demo/
+https://sleepconsult.eu
 
 ## Run The Site
 ```shell
